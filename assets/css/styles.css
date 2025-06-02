@@ -79,7 +79,7 @@ html{
 }
 
 .body{
-  background-image: url(/assets/imagenes/universidad-del-futuro.png);
+  background-image: url(../imagenes/universidad-del-futuro.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
