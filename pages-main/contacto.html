@@ -247,27 +247,28 @@ img {
   .container-main{
     display: flex;
     flex-direction: column;
-gap: 6.5rem;
  }
 
 
         /* Contenedor principal */
         .main-content {
-            flex-grow: 1; /* Empuja el footer hacia abajo */
-            padding: 2rem 1rem; /* Espaciado alrededor del contenido principal */
-            display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Alinea el card arriba si hay espacio */
+        display: flex;
+        justify-content: center; /* Centrado horizontal */
+        align-items: center;     /* Centrado vertical */
+        height: 100vh;  
         }
 
         /* Estilos para el contenedor del formulario de contacto */
         .contact-card {
             background-color: #ffffff9a;
-            padding: 2rem 2.5rem;
+            padding:1rem 4rem;
             border-radius: 10px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             width: 100%;
+            display: flex;
+            flex-direction: column;
             max-width: 600px; /* Ancho máximo para el formulario */
+            
         }
 
         .contact-card h2 {
@@ -280,7 +281,7 @@ gap: 6.5rem;
 
         /* Estilos para los grupos del formulario */
         .form-group {
-            margin-bottom: 1.25rem;
+            margin-bottom: 1rem;
         }
 
         .form-group label {
@@ -341,13 +342,18 @@ gap: 6.5rem;
 
         /* Estilos del pie de página simple */
         .simple-footer {
-background-color:#00b785;  
-          color: #ffffff; /* Gris claro */
-            text-align: center;
-            padding: 1.5rem 0.3rem;
-            font-size: 0.9rem;
-        
-        }
+  background-color: #00b785;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ width: 99%;
+  height: 10rem;
+  border-radius: 10px;
+       }
 
         /* Para hacer el formulario un poco más responsivo en pantallas pequeñas */
         @media (max-width: 480px) {
@@ -367,7 +373,6 @@ background-color:#00b785;
     </style>
 </head>
 <body class="body">
-
      <header>
     <nav class= "nav neon-info-hi">
       <a href="/" id="logo">            
@@ -383,6 +388,7 @@ background-color:#00b785;
         <a class=" nav__a neon-info-hi"  href="./registro.html">Login</a> 
       </div>      
     </nav>
+    </header>
 <div class="container-main">
     <main class="main-content">
         <div class="contact-card">

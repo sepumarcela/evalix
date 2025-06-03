@@ -78,7 +78,7 @@ html{
 }
 
 .body{
-  background-image: url(/assets/imagenes/377850351276306432.png);
+  background-image: url(../imagenes/377850351276306432.png);
   filter: grayscale(50%) blur(10%);
   background-repeat: no-repeat;
   background-size: cover;
