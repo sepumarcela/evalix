@@ -1,13 +1,12 @@
 # Sistema de Gestión de Notas
 
 Elaborado por:
-* Yesenia Tejada
+* Yuly Marcela Sepulveda Sepulveda
+* Mariana Rivera Perez
 * Felipe Quintero Pulgarín
-* Ángel Andrés Lozano Gómez
-* Sergio Andrés Montoya Monsalve
-* Mariana Ardila Liscano
 
-Fecha: 13/03/2025
+
+Fecha: ------------
 Institución: Cesde
 
 ## Contenido
