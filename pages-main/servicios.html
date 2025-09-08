@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evalix - Sobre Nosotros</title>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../index.html" type="image/x-icon">    
+    <link rel="shortcut icon" href="../index.html" type="image/x-icon">
     <style>
         /* Variables globales */
         :root {
@@ -15,7 +16,7 @@
             --accent-color: #f39c12;
             --dark-color: #0cdfdf;
             --light-color: #ecf0f1;
-            --shadow: 0 5px 15px rgba(0,0,0,0.1);
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         /* Estilos generales */
@@ -29,7 +30,7 @@
         body {
             background-color: rgb(179, 243, 238);
             color: #333;
-        
+
         }
 
         .container {
@@ -39,18 +40,21 @@
         }
 
         .header {
-            background-color: rgba(230, 231, 238, 0.368);;
+            background-color: rgba(230, 231, 238, 0.368);
+            ;
             color: white;
             padding: 20px 0;
             text-align: center;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             margin-bottom: 10px;
             color: cyan;
         }
 
-       
+
 
         /* Sección de introducción */
         .intro {
@@ -106,20 +110,24 @@
         }
 
         @keyframes carousel {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateX(0);
             }
+
             33% {
                 transform: translateX(-33.33%);
             }
+
             66% {
                 transform: translateX(-66.66%);
             }
         }
 
-        
 
-        .carousel-item:nth-child {        
+
+        .carousel-item:nth-child {
             filter: opacity(1);
             z-index: 10;
         }
@@ -157,7 +165,7 @@
 
         .benefit-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
 
         .benefit-card h3 {
@@ -172,85 +180,90 @@
         }
 
         /* Equipo */
-       
 
-   .main__equipo{
-    min-height: auto;    
-    width: 100%;
-    background-color: #1a1a1a;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 20px 15px;
-  }
-.main__equipo--div{
-    display: flex;   
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; 
-    
-}
-article{
-    position: relative;
-    width: 320px;
-   
-    transition: all 0.3s ease ;
-}
-article img:first-child {
-    box-shadow: 0 60px 60px -60px rgba(93, 99, 156, 0.5);
-    border-radius: 4px;
-    width: 100%;
-    object-fit: cover;
-    display: block;
 
-}
-article img:last-child {
-    position: absolute;
-    width: 100%;    
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
-    margin: auto;
-    transform: translateY(25%);
-    transition: .3s ease;
-    opacity: 0;
-}
-article:hover {
-    transform:    
-    perspective(250px)
-    rotatex(10deg)
-    translatey(-5%)
-    translateZ(0);
-}
-article::before {
+        .main__equipo {
+            min-height: auto;
+            width: 100%;
+            background-color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 20px 15px;
+        }
 
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image:linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.5)50%,
-    rgba(0, 0, 0) 95%);
-    opacity: 0;
-    transition: all 0.3s ease;    
-}
-article:hover::before{
-    opacity: 0;
-} 
-article:hover img:last-child {
-    opacity: 1;
-    transform: translateY(10%);
-    box-shadow: 0 0 6px cyan, 0 0 25px cyan, 
-  0 0 50px cyan, 0 0 100px cyan; 
-  
+        .main__equipo--div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
 
-}
+        }
+
+        article {
+            position: relative;
+            width: 320px;
+
+            transition: all 0.3s ease;
+        }
+
+        article img:first-child {
+            box-shadow: 0 60px 60px -60px rgba(93, 99, 156, 0.5);
+            border-radius: 4px;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+
+        }
+
+        article img:last-child {
+            position: absolute;
+            width: 100%;
+            left: 0%;
+            right: 0%;
+            bottom: 0%;
+            margin: auto;
+            transform: translateY(25%);
+            transition: .3s ease;
+            opacity: 0;
+        }
+
+        article:hover {
+            transform:
+                perspective(250px) rotatex(10deg) translatey(-5%) translateZ(0);
+        }
+
+        article::before {
+
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.5)50%,
+                    rgba(0, 0, 0) 95%);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        article:hover::before {
+            opacity: 0;
+        }
+
+        article:hover img:last-child {
+            opacity: 1;
+            transform: translateY(10%);
+            box-shadow: 0 0 6px cyan, 0 0 25px cyan,
+                0 0 50px cyan, 0 0 100px cyan;
+
+
+        }
 
         /* Contacto */
         .contact {
@@ -263,7 +276,7 @@ article:hover img:last-child {
             margin-bottom: 30px;
         }
 
-        a{
+        a {
             text-decoration: none;
             color: black;
         }
@@ -282,10 +295,10 @@ article:hover img:last-child {
         }
 
         .cta-button:hover {
-           opacity: 1;
-           transform: translateY(10%);
-           box-shadow: 0 0 6px cyan, 0 0 25px cyan, 
-           0 0 50px cyan, 0 0 100px cyan;
+            opacity: 1;
+            transform: translateY(10%);
+            box-shadow: 0 0 6px cyan, 0 0 25px cyan,
+                0 0 50px cyan, 0 0 100px cyan;
         }
 
         /* Footer */
@@ -301,27 +314,30 @@ article:hover img:last-child {
             .carousel-container {
                 height: 400px;
             }
-            
+
             .benefits-grid {
                 grid-template-columns: 1fr;
-            }          
-         
-            .main__equipo--div {
-       
-             gap: 20px; /* Quizás menos gap en móviles */
-          }
+            }
 
-           .main__equipo h2 { /* Estilos para el título de la sección en móvil */
-           font-size: 1.8rem; /* Ajustar tamaño de fuente */
-       }
+            .main__equipo--div {
+
+                gap: 20px;
+                /* Quizás menos gap en móviles */
+            }
+
+            .main__equipo h2 {
+                /* Estilos para el título de la sección en móvil */
+                font-size: 1.8rem;
+                /* Ajustar tamaño de fuente */
+            }
         }
 
-        @media (max-width: 480px) 
-        {
+        @media (max-width: 480px) {
             .main__equipo--div {
-             gap: 25px;
-        }
-        .intro h2 {
+                gap: 25px;
+            }
+
+            .intro h2 {
                 font-size: 1.8rem;
             }
 
@@ -335,136 +351,169 @@ article:hover img:last-child {
             }
         }
 
-    .neon-info-hi {
-      background: rgba(255, 255, 255, 0.534);
-      backdrop-filter: blur(5px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: rgb(19, 207, 192);
-      padding: 3px 10px;
-      border-radius: 10px;
-      display: flex;
-      position: relative;
-      overflow-wrap: break-word;
-      box-shadow: 0 0 30px rgba(78, 205, 197, 0.01);
-      transition: all 0.9s ease;
-  }
-  
-  .neon-info-hi:hover {
-      box-shadow: 0 0 30px, 0 0 50px rgba(88, 236, 226, 0.95);
-      transform: translateY(-11px);
-  }
-  
-  .neon-info-hi::before {
-      content: '';
-      position: absolute;
-      top: -3px;
-      left: -3px;
-      background-size: 400%;
-      z-index: -1;
-      filter: blur(9px);
-      width: calc(100% + 4px);
-      height: calc(100% + 4px);
-      animation: glowing 20s linear infinite;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-  }
-  
-  .neon-info-hi:hover::before {
-      opacity: 0.9;
-  }
-  
-  @keyframes glowing {
-      0% { background-position: 0 0; }
-      10% { background-position: 100% 0; }
-      20% { background-position: 200% 0; }
-      30% { background-position: 300% 0; }
-      50% { background-position: 1030% 0; }
-      70% { background-position: 300% 0; }
-      80% { background-position: 200% 0; }
-      90% { background-position: 100% 0; }
-      100% { background-position: 0 0; }
-  } 
-   .header {
-  margin-top: 10px;
-  height: 150px;
-  width: 100%;
-  position: sticky;
-  background-color: rgba(230, 238, 238, 0.368);;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0.2rem 0.2rem 1rem rgb(153, 151, 151);
-  
+        .neon-info-hi {
+            background: rgba(255, 255, 255, 0.534);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: rgb(19, 207, 192);
+            padding: 3px 10px;
+            border-radius: 10px;
+            display: flex;
+            position: relative;
+            overflow-wrap: break-word;
+            box-shadow: 0 0 30px rgba(78, 205, 197, 0.01);
+            transition: all 0.9s ease;
+        }
 
-}
+        .neon-info-hi:hover {
+            box-shadow: 0 0 30px, 0 0 50px rgba(88, 236, 226, 0.95);
+            transform: translateY(-11px);
+        }
 
-.header__evalix {
-  height: 100px;
-  /* Ajusta la altura, no el ancho */
-  max-width: 100%;
-  /* Evita que se desborde */
-  object-fit: contain;
-}
+        .neon-info-hi::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(9px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
 
-.header__sesion {
-  height: 100px;
-  /* Ajusta la altura, no el ancho */
-  max-width: 100%;
-  /* Evita que se desborde */
-  object-fit: contain;
-  display: flex;
-  flex-direction: column;
-  gap: 10%;
-  align-content: center;
-  margin-right: 10px;
-  color: white;
-}
+        .neon-info-hi:hover::before {
+            opacity: 0.9;
+        }
 
-.logosesion {
-  height: 40px;
-  /* Ajusta la altura, no el ancho */
-  max-width: 50%;
-  /* Evita que se desborde */
-  object-fit: contain;
-  align-self: center;
-  margin-top: 12px;
-}
+        @keyframes glowing {
+            0% {
+                background-position: 0 0;
+            }
 
-.textsesion {
-  text-align: center;
-  padding: 6px;
-  border-radius: 7px;
-  background-color: rgba(4, 187, 172, 0.699);
-  font-size: 15px;
-  font-weight: bold;
-}
+            10% {
+                background-position: 100% 0;
+            }
 
-.textsesion:hover {
-  background-color: rgb(10, 153, 158);
-}
-   
+            20% {
+                background-position: 200% 0;
+            }
 
-  </style>
+            30% {
+                background-position: 300% 0;
+            }
+
+            50% {
+                background-position: 1030% 0;
+            }
+
+            70% {
+                background-position: 300% 0;
+            }
+
+            80% {
+                background-position: 200% 0;
+            }
+
+            90% {
+                background-position: 100% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        .header {
+            margin-top: 10px;
+            height: 150px;
+            width: 100%;
+            position: sticky;
+            background-color: rgba(230, 238, 238, 0.368);
+            ;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0.2rem 0.2rem 1rem rgb(153, 151, 151);
+
+
+        }
+
+        .header__evalix {
+            height: 100px;
+            /* Ajusta la altura, no el ancho */
+            max-width: 100%;
+            /* Evita que se desborde */
+            object-fit: contain;
+        }
+
+        .header__sesion {
+            height: 100px;
+            /* Ajusta la altura, no el ancho */
+            max-width: 100%;
+            /* Evita que se desborde */
+            object-fit: contain;
+            display: flex;
+            flex-direction: column;
+            gap: 10%;
+            align-content: center;
+            margin-right: 10px;
+            color: white;
+        }
+
+        .logosesion {
+            height: 40px;
+            /* Ajusta la altura, no el ancho */
+            max-width: 50%;
+            /* Evita que se desborde */
+            object-fit: contain;
+            align-self: center;
+            margin-top: 12px;
+        }
+
+        .textsesion {
+            text-align: center;
+            padding: 6px;
+            border-radius: 7px;
+            background-color: rgba(4, 187, 172, 0.699);
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .textsesion:hover {
+            background-color: rgb(10, 153, 158);
+        }
+    </style>
 </head>
+
 <body>
     <header class="header neon-info-hi">
-    <a href="../index.html"> <img class="header__evalix neon-info-hi" src="../assets/imagenes/evalix.png" alt="Logo de evalix"></a>
-    <h1 style="color: var(--primary-color);padding: 1rem; border-radius: 0.5rem;">Sistema Integral de Gestión de Notas</h1>
-<!-- logo de Evalix a la izquierda -->
-    <div class="header__sesion">
-    <!-- Icono de cerrar sesión -->
-        <img class="logosesion" src="../assets/imagenes/cerrar-sesion.png" alt="Logo de cerrar sesión">
-        <a href="../index.html" class="textsesion">Cerrar sesión </a>
-    </div>     
-           
+        <a href="../index.html"> <img class="header__evalix neon-info-hi" src="../assets/imagenes/evalix.png"
+                alt="Logo de evalix"></a>
+        <h1 style="color: var(--primary-color);padding: 1rem; border-radius: 0.5rem;">Sistema Integral de Gestión de
+            Notas</h1>
+        <!-- logo de Evalix a la izquierda -->
+        <div class="header__sesion">
+            <!-- Icono de cerrar sesión -->
+            <img class="logosesion" src="../assets/imagenes/cerrar-sesion.png" alt="Logo de cerrar sesión">
+            <a href="../index.html" class="textsesion">Cerrar sesión </a>
+        </div>
+
     </header>
 
     <main class="intro">
         <div class="container">
             <h2>Transformando la Gestión Educativa</h2>
-            <p>Desde 2022, nuestro equipo de desarrolladores ha estado a la vanguardia del software educativo, creando soluciones innovadoras que mejoran la experiencia de aprendizaje tanto para estudiantes como para docentes.</p>
-            <p>Evalix nace de nuestra pasión por optimizar los procesos académicos y facilitar el seguimiento del rendimiento estudiantil, convirtiendo la gestión de notas en una experiencia eficiente y transparente.</p>
+            <p>Desde 2022, nuestro equipo de desarrolladores ha estado a la vanguardia del software educativo, creando
+                soluciones innovadoras que mejoran la experiencia de aprendizaje tanto para estudiantes como para
+                docentes.</p>
+            <p>Evalix nace de nuestra pasión por optimizar los procesos académicos y facilitar el seguimiento del
+                rendimiento estudiantil, convirtiendo la gestión de notas en una experiencia eficiente y transparente.
+            </p>
         </div>
     </main>
 
@@ -524,65 +573,78 @@ article:hover img:last-child {
         <div class="container">
             <h2>Beneficios de Evalix</h2>
             <div class="benefits-grid">
-                <div class="benefit-card">                    
+                <div class="benefit-card">
                     <h3>Gestión Eficiente</h3>
-                    <p>Optimiza el proceso de registro y cálculo de calificaciones, reduciendo errores y ahorrando tiempo valioso para los docentes.</p>
+                    <p>Optimiza el proceso de registro y cálculo de calificaciones, reduciendo errores y ahorrando
+                        tiempo valioso para los docentes.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon"></div>
                     <h3>Acceso Multiplataforma</h3>
-                    <p>Consulta notas y realiza seguimiento académico desde cualquier dispositivo, en cualquier momento y lugar.</p>
+                    <p>Consulta notas y realiza seguimiento académico desde cualquier dispositivo, en cualquier momento
+                        y lugar.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon"></div>
                     <h3>Informes Visuales</h3>
-                    <p>Analiza el rendimiento mediante gráficos interactivos que facilitan la identificación de fortalezas y áreas de mejora.</p>
+                    <p>Analiza el rendimiento mediante gráficos interactivos que facilitan la identificación de
+                        fortalezas y áreas de mejora.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon"></div>
                     <h3>Seguridad Garantizada</h3>
-                    <p>Protección de datos académicos con sistemas de autenticación y respaldo automático de información.</p>
+                    <p>Protección de datos académicos con sistemas de autenticación y respaldo automático de
+                        información.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon"></div>
                     <h3>Comunicación Directa</h3>
-                    <p>Facilita la retroalimentación entre docentes y estudiantes para un seguimiento personalizado del progreso.</p>
+                    <p>Facilita la retroalimentación entre docentes y estudiantes para un seguimiento personalizado del
+                        progreso.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon"></div>
                     <h3>Calendario Integrado</h3>
-                    <p>Organiza fechas de evaluaciones, entregas y actividades académicas con recordatorios automáticos.</p>
+                    <p>Organiza fechas de evaluaciones, entregas y actividades académicas con recordatorios automáticos.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="main__equipo">
-        <div> <h2>Nuestro Equipo de Desarrollo</h2></div>
+        <div>
+            <h2>Nuestro Equipo de Desarrollo</h2>
+        </div>
 
-        <div class="main__equipo--div" >           
-             <article>
-             <img src="../assets/imagenes/imagenes-equipo-trabajo/sergiofondo.jpeg" alt="">
-             <img src="../assets/imagenes/imagenes-equipo-trabajo/sergiohologsinfondo.png" alt="">
-             </article>
-             <article>
-             <img src="../assets/imagenes/imagenes-equipo-trabajo/fondomariana.png" alt="">
-             <img src="../assets/imagenes/imagenes-equipo-trabajo/marianasinfondo.png" alt="">
-             </article>
-             <article>
-             <img src= "../assets/imagenes/imagenes-equipo-trabajo/yesenia-fondo.png" alt="">
-             <img src="../assets/imagenes/imagenes-equipo-trabajo/yeseniasinfondo2.png " alt="">
-             </article>
-             <article>
-             <img src="../assets/imagenes/imagenes-equipo-trabajo/angelandresfondo.png" alt="">
-             <img src="../assets/imagenes/imagenes-equipo-trabajo/angelfoto.png" alt="">
-             </article>
-             <article>
-             <img src="../assets/imagenes/imagenes-equipo-trabajo/felipequinterofondo.png" alt="">
-             <img src="../assets/imagenes/imagenes-equipo-trabajo/felipe-foto.png" alt="">
-             </article>
-             </div>
-            </section>
+        <div class="main__equipo--div">
+            <article>
+                <img src="../assets/imagenes/imagenes-equipo-trabajo/sergiofondo.jpeg" alt="">
+                <img src="../assets/imagenes/imagenes-equipo-trabajo/sergiohologsinfondo.png" alt="">
+            </article>
+            <article>
+                <img src="../assets/imagenes/imagenes-equipo-trabajo/fondomariana.png" alt="">
+                <img src="../assets/imagenes/imagenes-equipo-trabajo/marianasinfondo.png" alt="">
+            </article>
+            <article>
+                <img src="../assets/imagenes/imagenes-equipo-trabajo/yesenia-fondo.png" alt="">
+                <img src="../assets/imagenes/imagenes-equipo-trabajo/yeseniasinfondo2.png " alt="">
+            </article>
+            <article>
+                <img src="../assets/imagenes/imagenes-equipo-trabajo/angelandresfondo.png" alt="">
+                <img src="../assets/imagenes/imagenes-equipo-trabajo/angelfoto.png" alt="">
+            </article>
+            <article>
+                <img src="../assets/imagenes/imagenes-equipo-trabajo/felipequinterofondo.png" alt="">
+                <img src="../assets/imagenes/imagenes-equipo-trabajo/felipe-foto.png" alt="">
+            </article>
+            <article>
+                <img src="../assets/imagenes/imagenes-equipo-trabajo/Fondomariana.png.png" alt="">
+                <img src="../assets/imagenes/imagenes-equipo-trabajo/Mariana.png" alt="">
+            </article>
+
+        </div>
+    </section>
 
     <section class="contact">
         <div class="container">
@@ -597,4 +659,6 @@ article:hover img:last-child {
             <p>&copy; 2025 Evalix - Todos los derechos reservados</p>
         </div>
     </footer>
-</body></html>
+</body>
+
+</html>
